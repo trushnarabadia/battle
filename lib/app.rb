@@ -2,21 +2,17 @@ require 'sinatra'
 require 'sinatra/reloader' 
 
 
-class MyApp < Sinatra::Base
-  configure :development do
-    register Sinatra::Reloader
-  end
+configure :production do
+  enable :reloader
+end
 
   get '/' do
     "Hello!"
   end
 
-  get '/secret' do
-    "Secret Hello!"
+  get '/cat' do
+    border: dashed red;
+     https://imgur.com/jFaSxym
   end
 
-  get '/test' do
-    "Test Hello!"
-  end
-
-end
+# end

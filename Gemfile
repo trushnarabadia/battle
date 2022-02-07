@@ -7,6 +7,7 @@ ruby '3.1.0'
 
 # gem "rails"
 group :development, :test do
+  gem "sinatra-contrib"
   gem "sinatra"
   gem "webrick"
 end
